@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoySklad - AminCRM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-switch button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .lang-switch button:hover {
+            background-color: #0056b3;
+        }
+        .content-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; font-size: 24px; }
+        h3 { color: #34495e; margin-top: 20px; }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="content-box">
+        <a href="index.html" class="back-link" id="back-btn">← Asosiy sahifaga qaytish</a>
+        
+        <!-- Tilni o'zgartirish tugmalari -->
+        <div class="lang-switch">
+            <button onclick="setLanguage('uz')">O'zbekcha</button>
+            <button onclick="setLanguage('ru')">Русский</button>
+            <button onclick="setLanguage('en')">English</button>
+        </div>
+
+        <!-- O'ZBEKCHA MATN -->
+        <div id="uz" class="lang-section active">
+            <h1>MoySklad orqali savdo va omborni avtomatlashtirish: 5 ta oltin qoida</h1>
+            <p><strong>MoySklad</strong> — bu savdo, ombor va mijozlar hisobini real vaqt rejimida yurituvchi zamonaviy bulutli (cloud) platformadir. Biznesingizni samarali avtomatlashtirish uchun quyidagi 5 ta qoidaga amal qiling:</p>
+            
+            <h3>1. Bulutli tizimga o‘ting</h3>
+            <p>MoySklad yordamida dunyoning istalgan nuqtasidan turib ombor qoldig‘i, kassa tushumi va savdo hisobotlarini online kuzatib borasiz.</p>
+            
+            <h3>2. Shtrix-kodlashni joriy qiling</h3>
+            <p>Shtrix-kod skanerlaridan foydalanish tovar qabul qilish va sotish jarayonini 3-4 baravar tezlashtiradi hamda insoniy xatoliklarga chek qo‘yadi.</p>
+            
+            <h3>3. Savdo kanallarini birlashtiring</h3>
+            <p>Telegram-bot, internet-do‘kon va oflayn savdo nuqtalaringizni MoySklad'ga ulang. Barcha buyurtmalar va tovar qoldiqlari yagona tizimda avtomatik ravishda yangilanadi.</p>
+            
+            <h3>4. Tugayotgan tovarlarni nazorat qiling</h3>
+            <p>Tizimda minimal qoldiq me'yorini belgilab qo‘ying. Tovar tugayotganda MoySklad sizga xabar beradi, bu esa savdo to‘xtab qolishining oldini oladi.</p>
+            
+            <h3>5. Aniq analitikadan foydalaning</h3>
+            <p>MoySklad beradigan hisobotlar orqali eng ko‘p foyda keltirayotgan tovarlar, xodimlarning sotuv samaradorligi va sof foydani har kuni kuzatib boring.</p>
+            
+            <p><em>Xulosa: MoySklad — ombordagi tartibsizlikka barham berib, savdoni oshirish va vaqtni tejash uchun eng qulay yechimdir.</em></p>
+        </div>
+
+        <!-- RUSCHA MATN -->
+        <div id="ru" class="lang-section">
+            <h1>Автоматизация торговли и склада с MoySklad: 5 золотых правил</h1>
+            <p><strong>MoySklad</strong> — это современная облачная система для учета товаров, управления складом и продажами в режиме реального времени. Чтобы эффективно автоматизировать ваш бизнес, придерживайтесь следующих 5 правил:</p>
+            
+            <h3>1. Перейдите в облако</h3>
+            <p>С MoySklad вы можете контролировать остатки на складе, выручку кассы и отчеты по продажам из любой точки мира в режиме онлайн.</p>
+            
+            <h3>2. Внедрите штрихкодирование</h3>
+            <p>Использование сканеров штрихкодов ускоряет приемку и продажу товаров в 3–4 раза и полностью исключает человеческий фактор.</p>
+            
+            <h3>3. Объедините каналы продаж</h3>
+            <p>Подключите Telegram-ботов, интернет-магазины и оффлайн-точки к MoySklad. Все заказы и товарные остатки будут обновляться автоматически в единой системе.</p>
+            
+            <h3>4. Контролируйте остатки товаров</h3>
+            <p>Задайте минимальный лимит запасов. MoySklad вовремя предупредит вас, когда товар будет заканчиваться, что предотвратит простой в продажах.</p>
+            
+            <h3>5. Используйте точную аналитику</h3>
+            <p>Отслеживайте самые прибыльные товары, эффективность сотрудников и чистую прибыль каждый день с помощью наглядных отчетов MoySklad.</p>
+            
+            <p><em>Итог: MoySklad — это лучшее решение для устранения хаоса на складе, увеличения продаж и экономии вашего времени.</em></p>
+        </div>
+
+        <!-- INGLIZCHA MATN -->
+        <div id="en" class="lang-section">
+            <h1>Trade and Warehouse Automation with MoySklad: 5 Golden Rules</h1>
+            <p><strong>MoySklad</strong> is a modern cloud-based system for real-time inventory tracking, warehouse management, and sales control. Follow these 5 rules to automate your business effectively:</p>
+            
+            <h3>1. Move to the Cloud</h3>
+            <p>Access inventory balances, cash register receipts, and sales reports online from anywhere in the world with MoySklad.</p>
+            
+            <h3>2. Implement Barcoding</h3>
+            <p>Using barcode scanners speeds up receiving and selling goods by 3–4 times and completely removes human error.</p>
+            
+            <h3>3. Unify Sales Channels</h3>
+            <p>Connect your Telegram bots, online stores, and physical retail outlets to MoySklad. All orders and stock balances will update automatically in one single system.</p>
+            
+            <h3>4. Monitor Low Stock</h3>
+            <p>Set minimum stock thresholds. MoySklad notifies you before items run out, preventing interruptions in your sales process.</p>
+            
+            <h3>5. Utilize Precise Analytics</h3>
+            <p>Track top-performing products, employee efficiency, and net profits daily using clear MoySklad reports.</p>
+            
+            <p><em>Conclusion: MoySklad is the ultimate solution to eliminate warehouse chaos, boost sales, and save your valuable time.</em></p>
+        </div>
+
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            // Hamma bo'limlarni yashirish
+            document.querySelectorAll('.lang-section').forEach(el => {
+                el.classList.remove('active');
+            });
+            // Tanlangan tilni chiqarish
+            document.getElementById(lang).classList.add('active');
+            
+            // Til sozlamasini xotirada saqlab qolish
+            localStorage.setItem('selected_lang', lang);
+        }
+
+        // Sahifa ochilganda oldingi tanlangan tilni tiklash (agar bo'lsa)
+        window.onload = function() {
+            const savedLang = localStorage.getItem('selected_lang');
+            if (savedLang) {
+                setLanguage(savedLang);
+            }
+        }
+    </script>
+</body>
+</html>
